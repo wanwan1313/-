@@ -1,0 +1,166 @@
+.loading {
+    width: 100%;
+    height: 100vh;
+    background: url(./images/bg/bg-gray-b.jpg);
+    background-size: 200px 200px;
+    display: none;
+
+}
+
+.loading.in {
+    display: block;
+}
+
+.loading.out {
+    animation: up-moveout .2s ;
+    ;animation-fill-mode: forwards;
+
+}
+
+
+@keyframes up-moveout  {
+    0% {
+        display: block;
+        margin-top:0 ;
+    }
+    99% {
+        display: block;
+        margin-top:-100vh ;
+    }
+    100% {
+        display: none;
+        margin-top:-100vh ;
+    }
+}
+
+
+
+.loading img {
+    width: 100%;
+    height: auto;
+}
+
+
+.loading-animation {
+    width: 100%;
+    position: absolute;
+    top: 35%;
+
+}
+
+.loading .mylogo {
+    width: 10%;
+    max-width: 180px;
+    min-width: 120px;
+    margin: 0 auto;
+    margin-bottom: 1%;
+    transform: translateX(-9%);
+    
+}
+
+.loading .manyegg {
+    width: 10%;
+    max-width: 180px;
+    min-width: 120px;  
+    margin: 0 auto;
+}
+
+
+.loading .egg {
+    width: 30%;
+    margin: 10px;
+}
+
+.loading .egg:nth-of-type(1) {
+    animation: jump 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2;
+    opacity: 0;
+}
+.loading .egg:nth-of-type(2) {
+    animation: jump2 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2;
+    opacity: 0;
+}
+.loading .egg:nth-of-type(3) {
+    animation: jump3 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2;
+    opacity: 0;
+}
+
+
+
+@keyframes jump {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    30% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    40% {
+        opacity: 1;
+        transform: translateY(-20px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes jump2 {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(-20px);
+    }
+    70% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes jump3 {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateY(-20px);
+    }
+    90% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

@@ -1,0 +1,391 @@
+/* taste-list插圖小動畫 */
+
+.mytaste-s-1.animation-on {
+    animation-name: mytaste-ani-1 ;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+
+
+}
+
+@keyframes mytaste-ani-1 {
+    0% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-1-on.png) center center no-repeat;
+        background-size: 90px 90px ;
+        transform: scale(1, 1);
+    }
+    50% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-1-on.png) center center no-repeat;
+    background-size: 90px 90px;
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-1-on.png) center center no-repeat;
+    background-size: 90px 90px;
+        transform: scale(1, 1);
+    }
+}
+.mytaste-s-2.animation-on {
+    animation-name: mytaste-ani-2 ;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+
+}
+
+@keyframes mytaste-ani-2 {
+    0% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-2-on.png) center center no-repeat;
+    background-size: 90px 90px;
+        transform: scale(1, 1);
+    }
+    50% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-2-on.png) center center no-repeat;
+    background-size: 90px 90px;
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-2-on.png) center center no-repeat;
+    background-size: 90px 90px;
+        transform: scale(1, 1);
+    }
+}
+.mytaste-s-3.animation-on {
+    animation-name: mytaste-ani-3 ;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+
+}
+
+@keyframes mytaste-ani-3 {
+    0% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-3-on.png) center center no-repeat;
+    background-size: 90px 90px;
+        transform: scale(1, 1);
+    }
+    50% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-3-on.png) center center no-repeat;
+    background-size: 90px 90px;
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-3-on.png) center center no-repeat;
+    background-size: 90px 90px;
+        transform: scale(1, 1);
+    }
+}
+.mytaste-s-4.animation-on {
+    animation-name: mytaste-ani-4 ;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+
+}
+
+@keyframes mytaste-ani-4 {
+    0% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-4-on.png) center center no-repeat;
+    background-size: 90px 90px;
+        transform: scale(1, 1);
+    }
+    50% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-4-on.png) center center no-repeat;
+    background-size: 90px 90px;
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-4-on.png) center center no-repeat;
+    background-size: 90px 90px;
+        transform: scale(1, 1);
+    }
+}
+.mytaste-s-5.animation-on {
+    animation-name: mytaste-ani-5 ;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+
+}
+
+@keyframes mytaste-ani-5 {
+    0% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-5-on.png) center center no-repeat;
+    background-size: 90px 90px;
+        transform: scale(1, 1);
+    }
+    50% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-5-on.png) center center no-repeat;
+    background-size: 90px 90px;
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-5-on.png) center center no-repeat;
+    background-size: 90px 90px;
+        transform: scale(1, 1);
+    }
+}
+.mytaste-s-6.animation-on {
+    animation-name: mytaste-ani-6 ;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+
+}
+
+@keyframes mytaste-ani-6 {
+    0% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-6-on.png) center center no-repeat;
+    background-size: 90px 90px;
+        transform: scale(1, 1);
+    }
+    50% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-6-on.png) center center no-repeat;
+    background-size: 90px 90px;
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-6-on.png) center center no-repeat;
+    background-size: 90px 90px;
+        transform: scale(1, 1);
+    }
+}
+.mytaste-s-7.animation-on {
+    animation-name: mytaste-ani-7 ;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+
+}
+
+@keyframes mytaste-ani-7 {
+    0% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-7-on.png) center center no-repeat;
+    background-size: 90px 90px;
+        transform: scale(1, 1);
+    }
+    50% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-7-on.png) center center no-repeat;
+    background-size: 90px 90px;
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-7-on.png) center center no-repeat;
+    background-size: 90px 90px;
+        transform: scale(1, 1);
+    }
+}
+.mytaste-s-8.animation-on {
+    animation-name: mytaste-ani-8 ;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+
+}
+
+@keyframes mytaste-ani-8 {
+    0% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-8-on.png) center center no-repeat;
+    background-size: 90px 90px;
+        transform: scale(1, 1);
+    }
+    50% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-8-on.png) center center no-repeat;
+    background-size: 90px 90px;
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-8-on.png) center center no-repeat;
+    background-size: 90px 90px;
+        transform: scale(1, 1);
+    }
+}
+.mytaste-s-9.animation-on {
+    animation-name: mytaste-ani-9 ;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+
+}
+
+@keyframes mytaste-ani-9 {
+    0% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-9-on.png) center center no-repeat;
+    background-size: 90px 90px;
+        transform: scale(1, 1);
+    }
+    50% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-9-on.png) center center no-repeat;
+    background-size: 90px 90px;
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        opacity: 1;
+        background: url(./images/taste-pic/mytaste/mytaste-s-9-on.png) center center no-repeat;
+    background-size: 90px 90px;
+        transform: scale(1, 1);
+    }
+}
+
+
+/* ---------------文字標籤小動畫 */
+
+.mytaste-s-1.animation-on::after {
+    animation-name: tag-ani ;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+.mytaste-s-8.animation-on::after {
+    animation-name: tag-ani ;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+.mytaste-s.animation-on::after {
+    animation-name: tag-ani2 ;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes tag-ani {
+    0% {
+        opacity: 1 ;
+        clip-path: polygon(85% 0, 85% 0, 85% 0, 85% 0, 85% 0, 85% 0, 85% 0, 85% 0);
+        color: transparent;
+    }
+    100% {
+        opacity: 1 ;
+        clip-path: polygon(60% 18%, 85% 0, 83% 18%, 100% 28%, 96% 92%, 65% 100%, 6% 92%, 0 22%);
+        color: var(--lightgray);
+    }
+}
+@keyframes tag-ani2 {
+    0% {
+        opacity: 1 ;
+        clip-path: polygon(50% 0, 50% 0, 50% 0, 50% 0, 50% 0, 50% 0, 50% 0, 50% 0);
+        color: transparent;
+    }
+    100% {
+        opacity: 1 ;
+        clip-path: polygon(40% 18%, 50% 0, 50% 17%, 100% 28%, 96% 92%, 65% 100%, 6% 92%, 0 22%);
+        color: var(--lightgray);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 桌機版 */ 
+@media (min-width: 768px) {
+/* -------------文字框出現 右滑進------------ */
+.scrollin-start {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: .5s;
+}
+
+/* -------------文字框出現 左滑進------------ */
+.scrollin-start2 {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: .5s;
+}
+
+/* -------------圖片出現------------- */
+.scrollin-on {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+/* --------------文字延後出現 */
+.scrollin-on2 {
+    opacity: 1;
+    transform: translateX(0px);
+    transition-delay: .3s;
+}
+    
+
+} 
+/* 手機版 */ 
+@media (max-width: 767px) { 
+
+
+/* -------------下滑進------------ */
+.scrollin-start {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: .5s;
+}
+
+/* -------------下滑進------------ */
+.scrollin-start2 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: .5s;
+}
+
+/* -------------圖片出現------------- */
+.scrollin-on {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/* --------------文字延後出現 */
+.scrollin-on2 {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: .3s;
+}
+}
+
+
+
+

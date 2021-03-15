@@ -1,0 +1,1009 @@
+:root {
+    --brandcolor: #A20C29;
+    --mainred: #680303;
+    --mainblue: #2E5469;
+    --maingreen: #74CCBB;
+    --lightgray: #F0F0F0;
+    --textbrown: #2B1414;
+}
+
+
+/* ----------------------------- title -------------------------- */
+
+
+/* 桌機版 高度和字大小*/
+@media (min-width: 768px) {
+.title-wrap {
+    opacity: 0;
+    width: 100%;
+    height: 50vh;
+    background: url(./images/taste-pic/taste-pic02.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -999;
+    animation: wrapanimation 1.4s ;
+    animation-fill-mode: forwards;
+}
+
+@keyframes wrapanimation {
+    0%{
+        opacity: 0;
+        height: 50vh;
+    }
+    50%{
+        opacity: 1;
+        height: 50vh;
+    }
+    100%{
+        opacity: 1;
+        height: 30vh;
+    }
+}
+
+.title-wrap::after {
+    content: '';
+    display: block;
+    width: 70%;
+    height: 80%;
+    background: url(./images/bg/bg-red.png);
+    background-size: 14px 14px;
+    opacity: 0.8;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    animation: wrapanimation2 .8s ;
+    animation-fill-mode: forwards;
+    animation-delay: .3s;  
+}
+
+.title-text p {
+    opacity: 0;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-40%);
+    text-align: center;
+    width: fit-content;
+    color: var(--lightgray);
+    font-size: 4.8rem;
+    font-weight: bold;
+    animation: textanimation 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.title-text p::before {
+    content: '';
+    display: block;
+    background: url(./images/logo/logo-s-w.svg) no-repeat;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -40%;
+    left: -60px;
+}
+}
+
+/* 手機版 高度和字大小*/
+@media (max-width: 767px) {
+.title-wrap {
+    opacity: 0;
+    width: 100%;
+    height: 40vh;
+    background: url(./images/taste-pic/taste-pic02.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -999;
+    animation: wrapanimation 1.4s ;
+    animation-fill-mode: forwards;
+}
+
+@keyframes wrapanimation {
+    0%{
+        opacity: 0;
+        height: 40vh;
+    }
+    50%{
+        opacity: 1;
+        height: 40vh;
+    }
+    100%{
+        opacity: 1;
+        height: 20vh;
+    }
+}
+
+.title-wrap::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80%;
+    background: url(./images/bg/bg-red.png);
+    background-size: 14px 14px;
+    opacity: 0.8;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    animation: wrapanimation2 .8s ;
+    animation-fill-mode: forwards;
+    animation-delay: .3s;
+    
+}
+
+.title-text p {
+    opacity: 0;
+    position: absolute;
+    top: 9%;
+    left: 50%;
+    transform: translateX(-40%);
+    text-align: center;
+    width: fit-content;
+    color: var(--lightgray);
+    font-size: 3.6rem;
+    font-weight: bold;
+    animation: textanimation 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.title-text p::before {
+    content: '';
+    display: block;
+    background: url(./images/logo/logo-s-w.svg) no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -30%;
+    left: -40px;
+}
+}
+
+
+
+/* title動畫們 */
+
+@keyframes wrapanimation2 {
+    0% {
+        opacity: 0;
+        transform: translate(-100%, -50%);
+    }
+    30% {
+        opacity: 0.8;
+        transform: translateX(0px , -50%);
+    }
+    100% {
+        opacity: 0.8;
+        transform: translateX(0px , -50%);
+    }
+}
+
+@keyframes textanimation {
+    0% {
+        opacity: 0;
+        left: 52%;
+    }
+    100% {
+        opacity: 1;
+        left: 50%;
+    }
+}
+
+
+
+
+/* ----------------------------------scroll----------------------------- */
+
+.scorllsign.none {
+    display: none;
+}
+
+.scorllsign, .scorllsign:visited {
+    width: fit-content;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    z-index: 997;
+    transform: translateX(-50%);
+    font-family: 'Volkhov', serif;
+    font-size: 2.4rem;
+    font-weight: bold;
+    letter-spacing: 0.8rem;
+    text-indent:1rem;
+    color: #8d8d8d;
+    transition: .5s;
+    opacity: 0;
+    animation: opacity-1 .3s ;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+
+.scorllsign:hover {
+    text-decoration: none;
+    color: var(--brandcolor);
+}
+
+@keyframes opacity-1 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.scorllsign span:nth-of-type(1) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    margin-top: 20px;
+    border-left: 2px solid #8d8d8d;
+    border-bottom: 2px solid #8d8d8d;
+    transform: rotate(-45deg);
+    animation: sdb05 1.5s infinite;
+    transition: .5s;
+}
+.scorllsign span:nth-of-type(2) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    margin-top: 30px;
+    border-left: 2px solid #8d8d8d;
+    border-bottom: 2px solid #8d8d8d;
+    transform: rotate(-45deg);
+    animation: sdb05 1.5s infinite;
+    transition: .5s;
+}
+
+.scorllsign:hover span:nth-of-type(1), .scorllsign:hover span:nth-of-type(2) {
+    border-left: 2px solid var(--brandcolor);
+    border-bottom: 2px solid var(--brandcolor);
+}
+
+
+
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+    opacity: 0;
+  }
+}
+
+/* ---------------------wrap-anima -------------------------*/
+/* .wrap-animation {
+    position: relative;
+    z-index: 998;
+}
+
+.ani-1 {
+    width: 10%;
+    height: 0;
+    padding-bottom: 5%;
+    background: url(./images/taste-pic/mytaste/mytaste-s-1.png) no-repeat;
+    background-size: 50%;
+    position: fixed;
+    bottom: 5%;
+    left: 3%;
+    filter: grayscale(0.9);
+    opacity: 0;
+    animation: ani-change 5s infinite;
+    
+}
+.ani-2 {
+    width: 10%;
+    height: 0;
+    padding-bottom: 5%;
+    background: url(./images/taste-pic/mytaste/mytaste-s-2.png) no-repeat;
+    background-size: 50%;
+    position: fixed;
+    bottom: 13%;
+    left: 5%;
+    filter: grayscale(0.9);
+    opacity: 0;
+    animation: ani-change2 5s infinite;
+    
+    
+}
+.ani-3 {
+    width: 10%;
+    height: 0;
+    padding-bottom: 5%;
+    background: url(./images/taste-pic/mytaste/mytaste-s-4.png) no-repeat;
+    background-size: 50%;
+    position: fixed;
+    bottom: 20%;
+    left: 1%;
+    filter: grayscale(0.9);
+    opacity: 0;
+    animation: ani-change3 5s infinite;
+    
+}
+.ani-4 {
+    width: 10%;
+    height: 0;
+    padding-bottom: 5%;
+    background: url(./images/taste-pic/mytaste/mytaste-s-3.png) no-repeat;
+    background-size: 50%;
+    position: fixed;
+    bottom: 28%;
+    left: 4%;
+    filter: grayscale(0.9);
+    opacity: 0;
+    animation: ani-change4 5s infinite;
+}
+.ani-5 {
+    width: 10%;
+    height: 0;
+    padding-bottom: 5%;
+    background: url(./images/taste-pic/mytaste/mytaste-s-5.png) no-repeat;
+    background-size: 50%;
+    position: fixed;
+    bottom: 36%;
+    left: 2%;
+    filter: grayscale(0.9);
+    opacity: 0;
+    animation: ani-change5 5s infinite;
+}
+
+@keyframes ani-change {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 0.1;
+    }
+
+    25% {
+        opacity: 0.1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes ani-change2 {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.1;
+    }
+
+    25% {
+        opacity: 0.1;
+    }
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes ani-change3 {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 0.1;
+    }
+
+    25% {
+        opacity: 0.1;
+    }
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes ani-change4 {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.1;
+    }
+
+    25% {
+        opacity: 0.1;
+    }
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes ani-change5 {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.1;
+    }
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+} */
+
+
+
+
+/* -----------------------------------content----------------------------- */
+
+
+
+/* 背景 */
+
+.content-wrap {
+    width: 100%;
+    background: url(./images/bg/bg-gray-b.jpg);
+    background-size: 200px 200px ;
+}
+
+/* 裝飾線 */
+/* 桌機版 高度*/
+@media (min-width: 768px) {
+.deco-line {
+    width: 100%;
+    height: 220px;
+    background: url(./images/bg/about-bar-s.svg) repeat-x;
+    background-size: 680px 220px;
+}
+}
+
+/* 手機版 高度*/
+@media (max-width: 767px) {
+.deco-line {
+    width: 100%;
+    height: 100px;
+    background: url(./images/bg/about-bar-s.svg) repeat-x;
+}
+}
+
+
+
+/* ------------------------------------mytaste-s-list---------------------------------- */
+/* 插圖列表顯示區 */
+
+/* 桌機版  改間距*/
+@media (min-width: 768px) {
+.taste-list {
+    width: 100%;
+    position: sticky;
+    top: -130px;
+    left: 0;
+    background: url(./images/bg/bg-gray-b.png);
+    background-size: 195px 210px ;
+    z-index: 997;
+    padding-bottom: 30px;
+}
+.taste-list-showbox {
+    /* margin-top: 10px; */
+    overflow: hidden;
+}
+}
+
+/* 手機版 改間距*/
+@media (max-width: 767px) {
+.taste-list {
+        width: 100%;
+        position: sticky;
+        top: 0;
+        left: 0;
+        background: url(./images/bg/bg-gray-b.png);
+        background-size: 195px 210px ;
+        z-index: 997;
+        padding-bottom: 15px;
+    }
+
+.taste-list-showbox {
+    margin-top: -40px;
+    overflow: hidden;
+}
+
+
+}
+
+
+/* 小插圖們父層*/
+.small {
+    transform: translateX(0);
+    transition: .2s;
+}
+
+.small img {
+    width: 90px;
+    height: 165px;
+    opacity: 0;
+}
+
+
+.mytaste-s {
+    text-align: center;
+    transition: .5s;
+    transform: scale(1, 1);
+}
+
+.mytaste-s:hover {
+    opacity: 0.6;
+}
+
+/* 9個小插圖 */
+
+/* ----------------原味----------------- */
+.mytaste-s-1 {
+    background: url(./images/taste-pic/mytaste/mytaste-s-1.png) center center no-repeat;
+    background-size: 90px 90px;
+    opacity: 0.3;
+}
+.mytaste-s-1::after {
+    content: '原味';
+    position: absolute;
+    bottom:15px;
+    left: 20px;
+    font-size: 1.4rem;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+    color: var(--lightgray);
+    background-color: var(--brandcolor);
+    padding: 8px 10px 5px;
+    clip-path: polygon(60% 18%, 85% 0, 83% 18%, 100% 28%, 96% 92%, 65% 100%, 6% 92%, 0 22%);
+    opacity: 0;
+    transition: .5s ;
+}
+
+/* ----------------苦甜巧克力----------------- */
+.mytaste-s-2 {
+    background: url(./images/taste-pic/mytaste/mytaste-s-2.png) center center no-repeat;
+    background-size: 90px 90px;
+    opacity: 0.3;
+}
+
+.mytaste-s-2::after {
+    content: '苦甜巧克力';
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--lightgray);
+    background-color: var(--brandcolor);
+    padding: 8px 12px 5px;
+    clip-path: polygon(40% 18%, 50% 0, 50% 17%, 100% 28%, 96% 92%, 65% 100%, 6% 92%, 0 22%);
+    opacity: 0;
+    transition: .5s ;
+}
+
+/* ----------------德式香腸----------------- */
+
+.mytaste-s-3 {
+    background: url(./images/taste-pic/mytaste/mytaste-s-3.png) center center no-repeat;
+    background-size: 90px 90px;
+    opacity: 0.3;
+}
+
+.mytaste-s-3::after {
+    content: '德式香腸起司';
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--lightgray);
+    background-color: var(--brandcolor);
+    padding: 8px 6px 5px;
+    clip-path: polygon(40% 18%, 50% 0, 50% 17%, 100% 28%, 96% 92%, 65% 100%, 6% 92%, 0 22%);
+    opacity: 0;
+    transition: .5s ;
+}
+
+/* ----------------蒜味起司----------------- */
+
+.mytaste-s-4 {
+    background: url(./images/taste-pic/mytaste/mytaste-s-4.png) center center no-repeat;
+    background-size: 90px 90px;
+    opacity: 0.3;
+}
+
+.mytaste-s-4::after {
+    content: '蒜香起司';
+    position: absolute;
+    bottom: 13px;
+    left: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--lightgray);
+    background-color: var(--brandcolor);
+    padding: 8px 12px 5px;
+    clip-path: polygon(40% 18%, 50% 0, 50% 17%, 100% 28%, 96% 92%, 65% 100%, 6% 92%, 0 22%);
+    opacity: 0;
+    transition: .5s ;
+}
+
+/* ----------------明太子起司----------------- */
+.mytaste-s-5 {
+    background: url(./images/taste-pic/mytaste/mytaste-s-5.png) center center no-repeat;
+    background-size: 90px 90px;
+    opacity: 0.3;
+}
+
+.mytaste-s-5::after {
+    content: '明太子起司';
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--lightgray);
+    background-color: var(--brandcolor);
+    padding: 8px 12px 5px;
+    clip-path: polygon(40% 18%, 50% 0, 50% 17%, 100% 28%, 96% 92%, 65% 100%, 6% 92%, 0 22%);
+    opacity: 0;
+    transition: .5s ;
+}
+
+/* ----------------鮪魚起司----------------- */
+
+.mytaste-s-6 {
+    background: url(./images/taste-pic/mytaste/mytaste-s-6.png) center center no-repeat;
+    background-size: 90px 90px;
+    opacity: 0.3;
+}
+
+.mytaste-s-6::after {
+    content: '鮪魚起司';
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--lightgray);
+    background-color: var(--brandcolor);
+    padding: 8px 12px 5px;
+    clip-path: polygon(40% 18%, 50% 0, 50% 17%, 100% 28%, 96% 92%, 65% 100%, 6% 92%, 0 22%);
+    opacity: 0;
+    transition: .5s ;
+}
+
+/* ----------------奶茶卡士達----------------- */
+
+.mytaste-s-7 {
+    background: url(./images/taste-pic/mytaste/mytaste-s-7.png) center center no-repeat;
+    background-size: 90px 90px;
+    opacity: 0.3;
+}
+
+.mytaste-s-7::after {
+    content: '奶茶卡士達';
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--lightgray);
+    background-color: var(--brandcolor);
+    padding: 8px 12px 5px;
+    clip-path: polygon(40% 18%, 50% 0, 50% 17%, 100% 28%, 96% 92%, 65% 100%, 6% 92%, 0 22%);
+    opacity: 0;
+    transition: .5s ;
+}
+
+/* ----------------卡士達----------------- */
+.mytaste-s-8 {
+    background: url(./images/taste-pic/mytaste/mytaste-s-8.png) center center no-repeat;
+    background-size: 90px 90px;
+    opacity: 0.3;
+}
+
+.mytaste-s-8::after {
+    content: '卡士達';
+    position: absolute;
+    bottom:15px;
+    left: 20px;
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    color: var(--lightgray);
+    background-color: var(--brandcolor);
+    padding: 8px 10px 5px;
+    clip-path: polygon(60% 18%, 85% 0, 83% 18%, 100% 28%, 96% 92%, 65% 100%, 6% 92%, 0 22%);
+    opacity: 0;
+    transition: .5s ;
+}
+
+/* ----------------葡萄乾奶酥----------------- */
+.mytaste-s-9 {
+    background: url(./images/taste-pic/mytaste/mytaste-s-9.png) center center no-repeat;
+    background-size: 90px 90px;
+    opacity: 0.3;
+}
+
+.mytaste-s-9::after {
+    content: '葡萄乾奶酥';
+    position: absolute;
+    bottom: 12px;
+    left: 10px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--lightgray);
+    background-color: var(--brandcolor);
+    padding: 8px 7px 5px;
+    clip-path: polygon(40% 18%, 50% 0, 50% 17%, 100% 28%, 96% 92%, 65% 100%, 6% 92%, 0 22%);
+    opacity: 0;
+    transition: .5s ;
+}
+
+
+
+
+/* ------------------------------------taste介紹--------------------------- */
+
+
+/* 桌機版 改間距*/
+@media (min-width: 768px) {
+.taste-content {
+    padding-top: 100px;
+}
+.mytaste-c {
+    margin-bottom: 200px;
+}
+}
+
+/* 手機版 改間距*/
+@media (max-width: 767px) {
+.taste-content {
+    padding-top: 80px;
+}
+.mytaste-c {
+    margin-bottom: 80px;
+}
+}
+
+
+/*  ------------------------版本1---左邊圖右邊字 共用---------------------------*/
+
+/* 圖片 */
+.mytastepic {
+    position: relative;
+    z-index: 10;
+    height: fit-content;
+}
+
+
+.mytastepic::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    background: url(./images/bg/bg-red.png);
+    background-size: 14px 14px;
+    background-clip: content-box;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    z-index: -1;
+}
+
+
+/* 介紹 */
+
+/* 桌機版 */
+@media (min-width: 768px) {
+
+.mytasteintro {
+    height: fit-content;
+    clip-path: polygon(82% 0, 100% 26%, 96% 96%, 14% 100%, 0 84%, 0 13%, 26% 0);
+    background-color: var(--lightgray);
+    padding: 20px 20px ;
+    position: relative;
+    z-index: 20;
+    margin-bottom: -5%;
+    margin-left: -5%;
+}
+
+.mytasteintro2 {
+    margin-bottom: -5%;
+    margin-right: -5%;
+    transform: rotate(-3deg);
+}
+
+.mytasteintro .tastedraw {
+    text-align: center;
+}
+
+
+.mytasteintro .tastedraw img{
+    width: 45%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.mytasteintro h4 {
+    text-align: center;
+    font-size: 2.4rem !important;
+    font-weight: bold;
+    color: var(--mainred);
+    margin-top: 10px;
+}
+
+.mytasteintro p {
+    margin: 10px auto 0;
+    width: 100%;
+    max-width: 290px;
+
+}
+
+
+}
+
+/* 手機版 */
+@media (max-width: 767px) {
+.mytasteintro {
+    height: fit-content;
+    clip-path: polygon(82% 0, 100% 26%, 96% 96%, 14% 100%, 0 84%, 0 13%, 26% 0);
+    background-color: var(--lightgray);
+    padding: 30px 30px ;
+    position: relative;
+    z-index: 20;
+    margin-top: 10px;
+    width: 90%;
+    max-width: 320px;
+}
+
+.mytasteintro .tastedraw {
+    text-align: right;
+}
+
+
+.mytasteintro .tastedraw img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.mytasteintro h4 {
+    text-align: left;
+    font-size: 2.2rem !important;
+    font-weight: bold;
+    color: var(--mainred);
+    height: fit-content;
+    padding: 0;
+}
+.mytasteintro span {
+    display: block;
+}
+
+
+.mytasteintro p {
+    margin: 10px auto 0;
+    width: 100%;
+    max-width: 290px;
+
+}
+
+
+}
+/*  ------------------------版本2---右邊圖 左邊字 微調---------------------------*/
+
+/* 圖片 */
+.mytastepic2 {
+    position: relative;
+    z-index: 10;
+    height: fit-content;
+}
+
+.mytastepic2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    background: url(./images/bg/bg-red.png);
+    background-size: 14px 14px;
+    background-clip: content-box;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    z-index: -1;
+}
+
+
+
+
+
+/* --------------------------------footer--------------------------- */
+
+/* 桌機版 */
+@media (min-width: 768px) {
+.footer-wrap {
+    width: 100%;
+    background-color: var(--mainred);
+    padding: 30px 0;
+    text-align: center;
+    color: var(--lightgray);
+    font-size: 1.2rem;
+}
+
+.footer-logo {
+    width: 100px;
+    height: 130px;
+    background: url(./images/logo/logo-c-w.svg)no-repeat center center;
+    background-size: contain;
+    margin: 0 auto;
+}
+}
+
+/* 手機版 */
+@media (max-width: 767px) {
+.footer-wrap {
+    width: 100%;
+    background-color: var(--mainred);
+    padding: 15px 0;
+    text-align: center;
+    color: var(--lightgray);
+}
+
+.footer-logo {
+    width: 80px;
+    height: 80px;
+    background: url(./images/logo/logo-c-w.svg)no-repeat center center;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.footer-wrap p{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.footer-wrap span {
+    display: block;
+}
+
+}
+
+
+
+
+

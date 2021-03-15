@@ -1,0 +1,434 @@
+/* ----------------文字簡單動畫------------- */
+/* 往上滑動出現 */
+.scrollin-start {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: .5s;
+}
+
+.scrollin-on {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+
+/* -----------------初始消失--------------- */
+.opacity-zerostart {
+    opacity: 0;
+}
+
+
+/* ------------------about-infobox01---------------  */
+.about-infobox01.scrollin-start::after {
+    opacity: 0;
+    transition: .5s;
+    transition-delay: .3s;
+}
+.about-infobox01.scrollin-on::after {
+    opacity: 0.5;
+}
+
+
+
+
+/* --------------------about-pic01------------------ */
+.about-pic01.animation-on::after {
+    animation-name: shakeshake ;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes shakeshake {
+    0% {
+        transform: translate(11%, -11%) rotate(8deg);   
+    }
+    25% {
+        transform: translate(11%, -11%) rotate(16deg);   
+    }
+    50% {
+        transform: translate(11%, -11%) rotate(8deg);   
+    }
+    75% {
+        transform: translate(11%, -11%) rotate(16deg);   
+    }
+    100% {
+        transform: translate(11%, -11%) rotate(8deg);   
+    }
+}
+
+
+
+
+
+
+
+
+
+/*  ----------------------《 粄上 》動畫-------------------- */
+
+/* start */
+.about-infobox02.animation-start {
+    border: 1.5px solid transparent;
+    transition: .1s;
+}
+
+.about-infobox02.animation-start p {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: .3s;
+    transition-delay: .6s;
+}
+
+.about-infobox02.animation-start::before {
+    opacity: 0;
+    transform: translate(-50%,-50%);
+    transition: .5s;
+}
+
+.about-infobox02.animation-start::after {
+    transform: translate(-300%, -50%) scaleX(2);
+    transition: .3s;
+    transition-delay: .3s;
+}
+
+/* on */
+.about-infobox02.animation-on {
+    border: 1.5px solid var(--lightgray);
+    transform: translateY(none);
+}
+
+.about-infobox02.animation-on p {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.about-infobox02.animation-on::before {
+    opacity: 1;
+    transform: translate(-50%,-50%);
+}
+
+.about-infobox02.animation-on::after {
+    transform: translate(-62%, -50%) scaleX(2);
+}
+
+
+/* -------------------------------- */
+
+
+/* ------------------about-infobox03---------------  */
+.about-infobox03.scrollin-start::after {
+    opacity: 0;
+    transition: .5s;
+    transition-delay: .3s;
+}
+.about-infobox03.scrollin-on::after {
+    opacity: 0.5;
+}
+
+
+/* --------------------about-pic02------------------ */
+.about-pic02.animation-on::after {
+    animation-name: shakeshake2 ;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes shakeshake2 {
+    0% {
+        transform: translate(-11%, -11%) rotate(-8deg);   
+    }
+    25% {
+        transform: translate(-11%, -11%) rotate(-16deg);   
+    }
+    50% {
+        transform: translate(-11%, -11%) rotate(-8deg);   
+    }
+    75% {
+        transform: translate(-11%, -11%) rotate(-16deg);   
+    }
+    100% {
+        transform: translate(-11%, -11%) rotate(-8deg);   
+    }
+}
+
+
+
+
+/* ------------------------cute-egg動畫--------------------- */
+
+.cute-1.animation-on {
+    opacity: 1;
+    animation-name: bounceIn;
+    animation-duration: 1.2s;
+    animation-delay: .6s;
+}
+.cute-2.animation-on {
+    opacity: 1;
+    animation-name: bounceIn;
+    animation-duration: 1.2s;
+    animation-delay: .8s;
+}
+.cute-3.animation-on {
+    opacity: 1;
+    animation-name: bounceIn;
+    animation-duration: 1.2s;
+    animation-delay: 1s;
+}
+.cute-4.animation-on {
+    opacity: 1;
+    animation-name: bounceIn;
+    animation-duration: 1.2s;
+    animation-delay: 1.2s;
+}
+
+.cute-5.animation-on {
+    animation-name: eggshake ;
+    animation-duration: 1.2s;
+}
+
+.cute-6.animation-on {
+    animation-name: zoomIn ;
+    animation-duration: 1s;
+    opacity: 1;
+}
+
+@keyframes eggshake {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(10deg);
+    }
+    20% {
+        transform: rotate(-10deg);
+    }
+    30% {
+        transform: rotate(8deg);
+    }
+    40% {
+        transform: rotate(-8deg);
+    }
+    50% {
+        transform: rotate(6deg);
+    }
+    60% {
+        transform: rotate(-6deg);
+    }
+    70% {
+        transform: rotate(4deg);
+    }
+    80% {
+        transform: rotate(-4deg);
+    }
+    90% {
+        transform: rotate(4deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+/* ---------------------style------------------ */
+.style-redbg.animation-on {
+    opacity: 1;
+    animation-name: flipInY ;
+    animation-duration: .5s;
+}
+
+.style-infobox.animation-start {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: .5s;
+    transition-delay: .5s;
+}
+
+.style-infobox.animation-on {
+    opacity: 1;
+    transform: translateY(0px);
+    
+}
+
+
+.style-slogan.animation-on {
+    opacity: 1;
+    animation-name: bounceIn;
+    animation-duration: 1.2s;
+    animation-delay: 1s;
+}
+
+.style-showbox.animation-on {
+    animation-name: bounceIn;
+    animation-duration: 1.2s;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.style-arrow.animation-on {
+    animation-name: fadeIn;
+    animation-duration: .5s;
+    animation-delay: 1.3s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+
+/* -----------------taste--------------------- */
+.decoegg.animation-on {
+    animation-name: eggshake ;
+    animation-duration: 1.2s;
+}
+
+
+@keyframes eggshake {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(10deg);
+    }
+    20% {
+        transform: rotate(-10deg);
+    }
+    30% {
+        transform: rotate(8deg);
+    }
+    40% {
+        transform: rotate(-8deg);
+    }
+    50% {
+        transform: rotate(6deg);
+    }
+    60% {
+        transform: rotate(-6deg);
+    }
+    70% {
+        transform: rotate(4deg);
+    }
+    80% {
+        transform: rotate(-4deg);
+    }
+    90% {
+        transform: rotate(4deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+.taste-slide-1.animation-on {
+    animation-name: bounceIn;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+.taste-slide-2.animation-on {
+    animation-name: bounceIn;
+    animation-duration: 1.2s;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+}
+.taste-slide-3.animation-on {
+    animation-name: bounceIn;
+    animation-duration: 1.2s;
+    animation-delay: .4s;
+    animation-fill-mode: forwards;
+}
+
+.taste-arrow.animation-on {
+    animation-name: fadeIn;
+    animation-duration: .5s;
+    animation-delay: .6s;
+    animation-fill-mode: forwards;
+}
+
+/*  雞蛋糕新口味 */
+
+.drawegg.animation-on {
+    animation-name: eggshake ;
+    animation-duration: 1.2s;
+}
+
+
+.text.animation-on {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    animation: boxfadeIn 1.5s forwards;
+    opacity: 0;
+    animation-delay: .5s;
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition-delay: .5s;
+}
+
+.first.animation-on {
+    opacity: 1;
+    width: fit-content;
+    display: inline-block;
+    animation: firstSpan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    z-index: 1;
+    position: relative;
+    animation-delay: .5s;
+}
+
+.oh.animation-on {
+    opacity: 1;
+    display: inline-flex;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.second.animation-on {
+    opacity: 1;
+    animation: secondSpan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    z-index: -1;
+    display: inline-block;
+    animation-delay: .5s;
+}
+
+@keyframes boxfadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes firstSpan {
+    0% {
+        transform: translateX(70%);
+    }
+    60% {
+        transform: translateX(70%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes secondSpan {
+    0% {
+        transform: translateX(-100%);
+    }
+    60% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

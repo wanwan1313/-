@@ -1,0 +1,476 @@
+
+/* -------------------------文字-------------------------- */
+
+@media (min-width: 992px){
+html {
+    font-size: 10px;
+    word-break: keep-all;
+}
+}
+@media (max-width: 991px){
+html {
+    font-size: 9px;
+    word-break: normal;
+}
+}
+
+
+/* ---------------------body&animate----------------------- */
+
+body {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    color: var(--textbrown);
+    transition: .8s;
+    transition-timing-function: cubic-bezier(.72,.08,.39,.95);
+    overflow-x: hidden;
+    letter-spacing: 0.1rem;
+    width: 100%;
+    background-color:var(--mainblue);
+}
+
+
+/* 桌機版 */
+@media (min-width: 992px) {
+.width-s {
+    width: 90%;
+}
+}
+
+/* 手機版 */
+@media (max-width: 991px) {
+.width-s {
+    width: 100%;
+}
+}
+
+/* -------------------------common------------------------ */
+
+p {
+    margin: 0;
+}
+
+img {
+     width: 100%;
+     display: inline-block;
+}
+
+:root {
+    --brandcolor: #A20C29;
+    --mainred: #680303;
+    --mainblue: #2E5469;
+    --maingreen: #74CCBB;
+    --lightgray: #F0F0F0;
+    --textbrown: #2B1414;
+}
+
+
+/* -----------------------menu--------------------- */
+
+
+/* ---------------------nav-item列表 --------------*/
+
+
+/* 桌機版 */ 
+@media (min-width: 992px) { 
+
+    .nav-list {
+        opacity: 0;
+        width: 100%;
+        height: fit-content;
+        padding-right: 50px;
+        transition: .3s;
+    }
+    
+    .nav-list-on {
+        opacity: 1;
+    }
+    .nav-item {
+        width: 60%;
+        margin-left: auto;
+    }
+
+    .nav-item p::after {
+        content: '';
+        display: block;
+        width: 1000px;
+        height: 5px;
+        background-color:#b35b6c;
+        transform: translateX(100%);
+        transition: .5s;
+    }
+
+    .nav-item a, .nav-item a:visited {
+        color: var(--lightgray);
+        font-size: 2.2rem;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+        transition: .5s;
+        position: relative;
+    }
+    
+    
+    .nav-item p {
+        padding: 50px 0;
+    }
+    
+    .nav-item span {
+        color: var(--lightgray);
+        font-size: 1.6rem;
+        font-weight: 500;
+        letter-spacing: 0.8rem;
+        font-family: 'Volkhov', serif;
+        margin-left: 10px;
+        border-left: 2px solid var(--lightgray);
+        padding-left: 10px;
+        opacity: .5;
+        transition: .5s;
+    }
+    
+    /* nav滑鼠效果 */
+    .nav-item a:hover, .nav-item a:active {
+        text-decoration: none;
+        color:var(--maingreen);
+    }
+    
+    .nav-item a:hover p::after, .nav-item a:active p::after {
+        transform: translateX(0);
+    
+    }
+    
+    
+    .nav-item a:hover span , .nav-item a:active span {
+    
+        letter-spacing: 1.5rem;
+    }
+    
+    
+    /* sns */
+    
+    
+    .sns-list {
+        width: 60%;
+        margin-left: auto;
+        margin-top: 60px;
+    }
+    .fb-icon, .ig-icon , .bg-icon {
+        width: 40px;
+        margin-right: 25px;
+        transition: .5s;
+    }
+    
+    .fb-icon.jump , .ig-icon.jump , .bg-icon.jump {
+        animation: snsjump .2s;
+    }
+
+    @keyframes snsjump {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+    
+} 
+
+
+
+
+/* 手機版 */ 
+@media (max-width: 991px) { 
+    
+    .nav-list {
+        opacity: 0;
+        width: 100%;
+        height: fit-content;
+        max-width: 300px;
+        transition: .3s;
+        padding: 0 30px;
+    }
+    
+    .nav-list-on {
+        opacity: 1;
+    }
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-item p::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color:#b35b6c;
+        transition: .2s;
+    }
+
+    .nav-item a, .nav-item a:visited {
+        color: var(--lightgray);
+        font-size: 1.8rem;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+        transition: .5s;
+        position: relative;
+    }
+
+    .nav-item a:hover, .nav-item a:active {
+        text-decoration: none;
+        color:var(--maingreen);
+    }
+    
+    
+    .nav-item p {
+        padding: 20px 0;
+    }
+    
+    .nav-item span {
+        color: var(--lightgray);
+        font-size: 1.3rem;
+        font-weight: 500;
+        letter-spacing: 0.6rem;
+        font-family: 'Volkhov', serif;
+        margin-left: 10px;
+        border-left: 2px solid var(--lightgray);
+        padding-left: 10px;
+        opacity: .5;
+        transition: .5s;
+    }
+    
+    
+    /* sns */
+    .sns-list {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .fb-icon, .ig-icon , .bg-icon {
+        width: 25px;
+        margin: 12px;
+        transition: .5s;
+    }
+      
+
+}
+
+
+
+
+
+
+
+/* ------------------------nav-bar-------------------- */
+
+/*  桌機板 */
+@media (min-width: 992px){
+        .toggle {
+            width: 60px;
+            height: 80px;
+            border-radius: 28px;
+            border: 2px solid #fff;
+            background-color: #fff;
+            position: fixed;
+            z-index: 999;
+            cursor: crosshair;
+            right: 50px;
+            top: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-clip: content-box;
+            padding: 3px;
+            transition: .5s;
+            transform: translateY(-130px);
+        }
+
+        .togglered {
+            background-color: var(--brandcolor) ;
+            border: 2px solid var(--brandcolor);
+        }
+        .toggleshow {
+            transform: translateY(0px);
+        }
+
+        .toggleon {
+            border: 2px solid transparent;
+            background-color: transparent;
+        }
+
+        .toggle span {
+            display: block;
+            width: 70%;
+            height: 4px;
+            background-color: var(--brandcolor);
+            border-radius: 2px;
+            margin: 0 auto;
+            transition: .3s;
+        }
+
+        .toggle span::before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: var(--brandcolor);
+            border-radius: 2px;
+            margin-top: -12px;
+            transition: .3s;
+        }
+
+        .toggle span::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: var(--brandcolor);
+            border-radius: 2px;
+            margin-top: 19px;
+            transition: .3s;
+        }
+
+        .toggle span.linewhite, .toggle span.linewhite::after, .toggle span.linewhite::before {
+            background-color: #fff;
+        }
+
+
+        .toggle span.on {
+            background-color: transparent;
+        }
+
+        .toggle span.on::after {
+            transform: rotate(-45deg) translate(8px, -8px);
+            background-color:var(--lightgray) ;
+        }
+
+        .toggle span.on::before {
+            transform: rotate(45deg) translate(9px, 8px);
+            background-color:var(--lightgray) ;
+        }
+        
+        .nav-bar {
+            position: fixed;
+            z-index: 998;
+            right: 0;
+            top: 0;
+            width: 40%;
+            height: 100vh;
+            background-color: var(--mainblue);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 100%);
+            margin-right: -40%;
+            transition: .8s;
+            transition-timing-function: cubic-bezier(.72,.08,.39,.95);
+        }
+
+        .nav-bar-open {
+            margin-right: 0;
+            clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+        }
+
+}
+/*  手機板 */
+@media (max-width: 991px){
+        .toggle {
+            width: 35px;
+            height: 35px;
+            border-radius: 2px;
+            background-color: #fff;
+            position: fixed;
+            z-index: 999;
+            cursor: crosshair;
+            right: 10px;
+            top: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: .5s;
+            transform: translateY(-80px);
+            opacity: 0.8;
+        }
+
+        .togglered {
+            background-color: var(--brandcolor) ;
+        }
+        .toggleshow {
+            transform: translateY(0px);
+        }
+
+        .toggleon {
+            background-color: transparent;
+        }
+
+        .toggle span {
+            display: block;
+            width: 80%;
+            height: 3px;
+            background-color: var(--brandcolor);
+            border-radius: 2px;
+            margin: 0 auto;
+            transition: .3s;
+        }
+
+        .toggle span::before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: var(--brandcolor);
+            border-radius: 2px;
+            margin-top: -9px;
+            transition: .3s;
+        }
+
+        .toggle span::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: var(--brandcolor);
+            border-radius: 2px;
+            margin-top: 15px;
+            transition: .3s;
+        }
+
+        .toggle span.linewhite, .toggle span.linewhite::after, .toggle span.linewhite::before {
+            background-color: #fff;
+        }
+
+
+        .toggle span.on {
+            background-color: transparent;
+        }
+
+        .toggle span.on::after {
+            transform: rotate(-45deg) translate(5px, -5px);
+            background-color:var(--lightgray) ;
+        }
+
+        .toggle span.on::before {
+            transform: rotate(45deg) translate(8px, 8px);
+            background-color:var(--lightgray) ;
+        }
+
+        
+
+        .nav-bar {
+            position: fixed;
+            z-index: 998;
+            right: 0;
+            top: 0;
+            width: 80%;
+            height: 100vh;
+            background-color: var(--mainblue);
+            clip-path: polygon(95% 0, 100% 0, 100% 100%, 50% 100%);
+            margin-right: -80%;
+            transition: .8s;
+            transition-timing-function: cubic-bezier(.72,.08,.39,.95);
+        }
+        .nav-bar-open {
+            margin-right: 0;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+
+}

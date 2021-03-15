@@ -1,0 +1,264 @@
+/* -----------------------scroll--------------------- */
+
+
+/*  桌機板 */
+@media (min-width: 992px) {
+
+    a.scroll, a.scroll:visited {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    z-index: 996;
+    transform: translateX(-50%);
+    text-decoration: none;
+    font-size: 1.6rem;
+    letter-spacing: 0.8rem;
+    text-indent:1rem;
+    color: #fff;
+    font-family: 'Volkhov', serif;
+    transition: .3s;
+    opacity: 0;
+    animation-name: opacity-1;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+
+a.scroll span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  margin-top: -10px;
+  margin-right: -20px;
+  border-left: 1.5px solid #fff;
+  border-bottom: 1.5px solid #fff;
+  transform: rotate(-45deg);
+  animation: sdb05 1.5s infinite;
+}
+
+
+
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+    opacity: 0;
+  }
+}
+}
+
+/* 手機板 */
+@media (max-width: 991px) {
+a.scroll, a.scroll:visited {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    z-index: 996;
+    transform: translateX(-50%);
+    text-decoration: none;
+    font-size: 1.4rem;
+    letter-spacing: 0.8rem;
+    text-indent:1rem;
+    color: #fff;
+    font-family: 'Volkhov', serif;
+    transition: .3s;
+}
+
+a.scroll span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  margin-top: -40px;
+  border-left: 1.5px solid #fff;
+  border-bottom: 1.5px solid #fff;
+  transform: rotate(-45deg);
+  animation: sdb05 1.5s infinite;
+}
+
+
+
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+    opacity: 0;
+  }
+}
+}
+
+
+
+/* --------------------------------kv-main動畫------------------ */
+
+.kv-title {
+    opacity: 0;
+    animation: jackInTheBox ;
+    animation-duration: .8s;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+}
+
+
+.kv-center .kv-hand {
+    animation-name: handopen;
+    animation-duration: .8s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.kv-center .kv-eggline  {
+    opacity: 0;
+    animation-name: opacity-1;
+    animation-duration: .1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 1.4s;
+}
+
+.kv-center .kv-egg {
+    opacity: 0;
+    animation-name: eggfall;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+
+.kv-text {
+    opacity: 0;
+    animation-name: transformbig;
+    animation-duration: .1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.kv-text01 {
+    animation-delay: 2.2s;
+}
+.kv-text02 {
+    animation-delay: 2.4s;
+}
+.kv-text03 {
+    animation-delay: 2.6s;
+}
+.kv-text04 {
+    animation-delay: 2.8s;
+}
+.kv-text05 {
+    animation-delay: 3.2s;
+}
+.kv-text06 {
+    animation-delay: 3.4s;
+}
+.kv-text07 {
+    animation-delay: 3.6s;
+}
+.kv-text08 {
+    animation-delay: 3.8s;
+}
+
+
+
+@keyframes handopen {
+            0% {
+                background: url(./images/kv-main/kv-hand-close.svg)center center no-repeat;
+                background-size: contain;
+            }
+
+            20% {
+                background: url(./images/kv-main/kv-hand-close.svg)center center no-repeat;
+                background-size: contain;
+                opacity: 0.5;
+            }
+
+            30% {
+                background: url(./images/kv-main/kv-hand.svg)center center no-repeat;
+                background-size: contain;
+                opacity: 0.5;
+            }
+
+            100% {
+                background: url(./images/kv-main/kv-hand.svg)center center no-repeat;
+                background-size: contain;
+                opacity: 1;
+            }
+
+        }
+
+@keyframes opacity-1 {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+@keyframes transformbig {
+            0% {
+                opacity: 0;
+            }
+            60% {
+                opacity: 0.6;
+                transform: scale(1.1, 1.1);
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+@keyframes eggfall {
+            0% {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            20% {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+            40% {
+                transform: translateY(0px) rotate(5deg);
+                opacity: 1;
+            }
+            52% {
+                transform: translateY(0px) rotate(-5deg);
+                opacity: 1;
+            }
+            65% {
+                transform: translateY(0px) rotate(5deg);
+                opacity: 1;
+            }
+            75% {
+                transform: translateY(0px) rotate(-5deg);
+                opacity: 1;
+            }
+            85% {
+                transform: translateY(0px) rotate(5deg);
+                opacity: 1;
+            }
+            95% {
+                transform: translateY(0px) rotate(-5deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
