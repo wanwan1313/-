@@ -507,7 +507,7 @@
 /* 插圖列表顯示區 */
 
 /* 桌機版  改間距*/
-@media (min-width: 768px) {
+@media (min-width: 768px) { 
 .taste-list {
     width: 100%;
     position: sticky;
