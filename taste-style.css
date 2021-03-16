@@ -529,7 +529,7 @@
 .taste-list {
         width: 100%;
         position: sticky;
-        top: -30px;
+        top: -20px;
         left: 0;
         background: url(./images/bg/bg-gray-b2.png);
         background-size: 195px 195px ;
